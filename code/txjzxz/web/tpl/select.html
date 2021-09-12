@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>预拌混凝土溯源系统 | 选择通道</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+<div class="text-center" style="margin-top: 125px">
+    <h1 style="font-weight: bolder"> 请选择你要进入的通道</h1>
+</div>
+
+<div style="margin-left: 20%" class="text-center">
+    <form action="/select1" method="post">
+        <div class="col-lg-3 text-center">
+            <div class="widget navy-bg no-padding">
+                <div class="p-m">
+                    <h1>供货商一</h1>
+                    <br>
+                    <h2 class="m-xs">供货商一的信息</h2>
+                    <br>
+                    <br>
+
+                    <h3 class="no-margins">
+                        详细信息
+                    </h3>
+                    <small>备注</small>
+                </div>
+            </div>
+            <input name="org" value={{.Value}} style="display: none">
+            <input type="submit" name="select" class="btn btn-w-m btn-success m-t btn-rounded" value="进入">
+        </div>
+    </form>
+
+    <form action="/select2" method="post">
+    <div class="col-lg-3 text-center">
+        <div class="widget navy-bg no-padding">
+            <div class="p-m">
+                <h1>供货商二</h1>
+                <br>
+                <h2 class="m-xs">供货商二的信息</h2>
+                <br>
+                <br>
+
+                <h3 class="no-margins">
+                    详细信息
+                </h3>
+                <small>备注</small>
+            </div>
+        </div>
+        <input name="org" value={{.Value}} style="display: none">
+        <input type="submit" name="select" class="btn btn-w-m btn-success m-t btn-rounded" value="进入">
+    </div>
+    </form>
+
+    <form action="/select3" method="post">
+    <div class="col-lg-3 text-center">
+        <div class="widget navy-bg no-padding">
+            <div class="p-m">
+                <h1>供货商三</h1>
+                <br>
+                <h2 class="m-xs">供货商三的信息</h2>
+                <br>
+                <br>
+
+                <h3 class="no-margins">
+                    详细信息
+                </h3>
+                <small>备注</small>
+            </div>
+        </div>
+        <input name="org" value={{.Value}} style="display: none">
+        <input type="submit" name="select" class="btn btn-w-m btn-success m-t btn-rounded" value="进入">
+    </div>
+    </form>
+</div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+

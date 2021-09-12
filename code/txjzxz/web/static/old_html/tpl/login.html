@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="static/js/mobiscroll.custom-2.6.2.min.css">
+    <title>数据采集系统</title>
+    <link rel="stylesheet" href="static/js/jquery.mobile.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/s4s.css" type="text/css" />
+    <script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.mobile-1.4.0.min.js"></script>
+	 <script type="text/javascript" charset="utf-8" src="static/js/cordova.js"></script>
+    <script type="text/javascript" src="static/js/ian.js"></script>
+<!--    <script type="text/javascript" charset="utf-8" src="js/sqllite.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="static/js/getIp.js"></script>
+    <script type="text/javascript" charset="utf-8" src="static/js/index.js"></script>
+	 <script type="text/javascript">
+       
+        </script>
+</head>
+<body>
+<!-- 登录 -->
+<div data-role="page" id="login">
+    <div data-role="header">
+		<h1>数据采集系统</h1>
+	</div>
+        <div data-role="content" class="content_index">
+            		<div class="title_image">
+            			<img src="static/images/bg.jpg" />
+            		</div>
+            <form action="login" method="post">
+                <div class="indexcon">
+                    <p><input type="text" id="loginOrg" name="loginOrg" placeholder="请输入你的组织"></p>
+                    <p><input type="text" id="loginName" name="loginName" placeholder="请输入用户名"></p>
+                    <p><input type="password" id="password" name="password" placeholder="请输入密码"></p>
+                    <p><a id="loginsub" data-transition="slide"><span class="btn-order">提 交</span></a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

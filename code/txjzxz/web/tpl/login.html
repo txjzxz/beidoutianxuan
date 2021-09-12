@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>预拌混凝土溯源系统 | 登录</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name"></h1>
+
+            </div>
+            {{if .Flag}}
+                {{else}}
+                    <div id="popout">
+                        <div class="popout">
+                            <div class="">用户名或密码输入错误!请重新输入</div>
+                            <p><button type="button" name="button">好的</button></p>
+                        </div>
+                    </div>
+            {{end}}
+
+            <h3>欢迎登录预拌混凝土溯源系统</h3>
+            <p>
+            </p>
+            <p>安全第一，溯源卓越</p>
+            <form class="m-t" role="form" action="/login" method="post">
+                <div class="form-group">
+                    <select class="select2_demo_1 form-control" name="select">
+                        <option value="" disabled selected hidden>选择你的组织</option>
+                        <option value="1">1-监理1-组织</option>
+                        <option value="2">2-施工1-组织</option>
+                        <option value="3">3-供货1-组织</option>
+                        <option value="4">4-供货2-组织</option>
+                        <option value="5">5-供货3-组织</option>
+                        <option value="6">6-运输1-组织</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name= "username" placeholder="用户名" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="pw" placeholder="密码" required="">
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">登录</button>
+
+                <a href="#"><small>忘记密码?</small></a>
+                <p class="text-muted text-center"><small>还没有账号?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="register.html">创建一个帐户</a>
+            </form>
+            <p class="m-t"> <small>Copyright</strong> 预拌混凝土溯源系统 &copy; 2021</small> </p>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.popout button').on('click',function() {
+            $('#popout').css('display','none');
+        })
+    </script>
+</body>
+
+</html>
+
