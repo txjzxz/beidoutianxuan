@@ -1,6 +1,8 @@
 package controller
 
 import (
+	"fabric-go-sdk/service"
+	"github.com/hyperledger/fabric-protos-go/common"
 )
 
 type Application struct {
