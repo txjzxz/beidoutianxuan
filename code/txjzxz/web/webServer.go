@@ -1,7 +1,7 @@
 package web
 
 import (
-	"fabric-go-sdk/web/controller"
+	"web/controller"
 	"github.com/gin-gonic/gin"
 )
 

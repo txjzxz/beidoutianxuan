@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
 	shell "github.com/ipfs/go-ipfs-api"
 	"github.com/skip2/go-qrcode"
 	"io/ioutil"
@@ -983,7 +982,6 @@ func (app *Application) Upload5(c *gin.Context) {
 func (app *Application) GetQRcode(c *gin.Context) {
 	filename := c.PostForm("id") + c.PostForm("cc") + ".png"
 	ContentType := "image/png"
-	data, err := ioutil.ReadFile("/root/go/src/fabric-go-sdk/QRcode/" + filename)
 	if err != nil {
 		fmt.Println("read fail", err)
 	}
